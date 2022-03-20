@@ -52,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
-
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/ratingBar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/rate"
             android:layout_marginStart="16dp"
@@ -62,8 +63,8 @@
             android:layout_height="wrap_content"
             android:text="MORE"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/rate"
-            android:layout_marginStart="150dp"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            android:layout_marginStart="32dp"
             android:id="@+id/more"
             />
         <ImageView
