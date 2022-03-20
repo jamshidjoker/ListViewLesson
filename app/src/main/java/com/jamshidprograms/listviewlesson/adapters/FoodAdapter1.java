@@ -41,10 +41,9 @@ public class FoodAdapter1 extends BaseAdapter{
         TextView name = view.findViewById(R.id.name);
         TextView about = view.findViewById(R.id.about);
         FoodData foodData = (FoodData) getItem(i);
-        view.findViewById(R.id.back).setBackgroundColor(Color.parseColor("#000000"));
         image.setImageResource(foodData.getImage());
         name.setText(foodData.getName());
         about.setText(foodData.getAbout());
-        return about;
+        return view;
     }
 }
